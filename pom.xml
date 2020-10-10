@@ -205,8 +205,21 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <scm>
+<distributionManagement>
+        <repository>
+            <id>deployment</id>
+                 <name>Internal snapshot release</name>
+            <url>http://13.233.198.135:8081/repository/my_prj/</url>
+        </repository>
+    </distributionManagement>
+  
+         <distributionManagement>
+        <repository>
+            <id>deployment</id>
+                 <name>Internal release</name>
+            <url>http://13.233.198.135:8081/repository/my_prj_release/</url>
+        </repository>
+    </distributionManagement><scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
     <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
     <tag>HEAD</tag>
